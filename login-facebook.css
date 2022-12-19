@@ -1,3 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
+    min-height: 100vh;
+    background-color: rgb(219, 219, 219);
     display: grid;
+    grid-template-areas: 
+        'informacoes login'
+        'informacoes para-quem'
+    ;
+    grid-template-columns: 50%;
+
+}
+
+.informacoes-facebook{
+    grid-area: informacoes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.informacoes-facebook h1{ 
+    /* margin-right: 180px; */
+    align-self: flex-start;
+    font-size: 4.0rem;
+    font-weight: 300;
+    color: rgb(53, 53, 179);
+}
+
+.informacoes-facebook h3{  
+    font-size: 1.8rem;
+}
+
+.login-criar{
+    grid-area: login;
+    
+    background-color: orange;
+}
+
+.para-quem-criar{
+    grid-area: para-quem;
+}
+
+.logo-facebook{
+    padding-bottom: 10px;
 }
