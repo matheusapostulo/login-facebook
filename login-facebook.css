@@ -4,49 +4,51 @@
 }
 
 body {
-    min-height: 100vh;
+    margin: 0;
+    height: 100vh;
     background-color: #edf0f5;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-
+    align-items: center; 
 }
 
 .container-informacoes-facebook{
-    grid-area: informacoes;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 0px 130px 140px;
+    flex-direction: column; 
+    flex-grow: 1;
+    align-items: flex-end;
+    padding: 0px 0px 60px 50px;
 }
 
+.container-login-quem{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding: 0px 0px 0px 70px;
+}
 
 .container-informacoes-facebook h3{  
     color: #1c1e21;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 28px;
     font-weight: normal;
-    line-height: 35px;
-    width: auto;
+    line-height: 33px;
+    width: auto; 
     text-rendering: optimizeLegibility;
     
 }
 
-.container-login-quem{
-    grid-area: login-quem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
 .logo-facebook{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .container-login-criar {
-    margin: 100px 100px 20px 0px;
     height: 330px;
     width: 400px;
     display: flex;
@@ -77,5 +79,5 @@ body {
 }
 
 .para-quem-criar{
-    margin: 0px 120px 100px 0px;
+    
 }
