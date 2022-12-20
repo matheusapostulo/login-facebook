@@ -5,47 +5,77 @@
 
 body {
     min-height: 100vh;
-    background-color: rgb(219, 219, 219);
-    display: grid;
-    grid-template-areas: 
-        'informacoes login'
-        'informacoes para-quem'
-    ;
-    grid-template-columns: 50%;
+    background-color: #edf0f5;
+    display: flex;
+    flex-direction: row;
 
 }
 
-.informacoes-facebook{
+.container-informacoes-facebook{
     grid-area: informacoes;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0px 0px 130px 140px;
+}
+
+
+.container-informacoes-facebook h3{  
+    color: #1c1e21;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 35px;
+    width: auto;
+    text-rendering: optimizeLegibility;
     
 }
 
-.informacoes-facebook h1{ 
-    /* margin-right: 180px; */
-    align-self: flex-start;
-    font-size: 4.0rem;
-    font-weight: 300;
-    color: rgb(53, 53, 179);
+.container-login-quem{
+    grid-area: login-quem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.informacoes-facebook h3{  
-    font-size: 1.8rem;
+
+.logo-facebook{
+    padding-bottom: 20px;
 }
 
-.login-criar{
-    grid-area: login;
-    
-    background-color: orange;
+.container-login-criar {
+    margin: 100px 100px 20px 0px;
+    height: 330px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    border-radius: 10px; 
+}
+
+.container-email-senha{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+}
+
+.container-email-senha input{
+    border: 1px solid #b3b4b6;
+    height: 40px;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.container-email-senha #input-email{
+    margin: 15px 15px 5px 15px;
+}
+
+.container-email-senha #input-senha{
+    margin: 5px 15px 5px 15px;
 }
 
 .para-quem-criar{
-    grid-area: para-quem;
-}
-
-.logo-facebook{
-    padding-bottom: 10px;
+    margin: 0px 120px 100px 0px;
 }
