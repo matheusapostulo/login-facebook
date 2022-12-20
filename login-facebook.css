@@ -73,8 +73,7 @@ body {
     height: 45px;
     padding: 3px 0px 3px 14px;
     border-radius: 7px;
-    outline-color: rgb(121, 175, 245);
-    
+    outline-color: rgb(121, 175, 245);  
 }
 
 .container-email-senha input:active{
@@ -111,12 +110,21 @@ body {
     outline-color: rgb(7, 109, 243);
 }
 
+.entrar:hover{
+    background-color: #145fc2;
+}
+
 .esqueceu-senha{
     color: #1877F2;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
     align-self: center;
     margin-top: 15px;
+}
+
+
+.esqueceu-senha:hover{
+    text-decoration: underline;
 }
 
 .divisoria {
@@ -139,4 +147,42 @@ body {
     height: 50px;
     border-radius: 7px;
     outline-color: rgb(7, 109, 243);
+}
+
+.criar-conta:hover{
+    background-color: #3ba327;
+}
+
+@media (max-width: 900px) {
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-informacoes-facebook{
+        
+        align-items: center;
+        padding: 0px;
+    }
+
+    .container-email-senha, .container-login-quem{
+        padding: 0px;
+    }
+
+    .logo-facebook{
+        padding: 50px 0px 20px 0px;
+    }
+
+    .container-informacoes-facebook h3 {
+        width: 410px;
+        font-size: 23px;
+        font-weight: normal;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .para-quem-criar{
+        padding-bottom: 30px;
+    }
 }
